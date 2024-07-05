@@ -113,6 +113,23 @@ function animate(){
     sprite.draw()
     door.draw()
 
+    // draw the game instruction at lv 1
+    if (currentLevel === 1){
+        c.font = '12px "Press Start 2P"';
+        c.fillText('WASD for movement', 250, 40)
+        c.fillText('Press W infront of the door to go next level', 250, 60)
+        c.fillText('Avoid monster!', 250, 80)
+        c.fillText('Press R to reset current level', 250, 100)
+    }
+
+    if (currentLevel === 4){
+        c.font = '12px "Press Start 2P"';
+        c.fillText('Thank you for playing this short game!', 250, 120)
+        c.fillText('Enjoy the companionship of this cute piggy', 250, 140)
+    }
+    
+
+
     // draw the collisions
     collisionsData.forEach(function(collision){
         collision.draw()

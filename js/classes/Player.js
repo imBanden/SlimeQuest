@@ -68,9 +68,9 @@ class Player extends Sprite {
 
         c.drawImage(this.heartImg, 16, 16, 16, 16)
 
-        c.font = '16px serif'
+        c.font = '12px "Press Start 2P"'
         c.fillStyle = 'white'
-        c.fillText(`${playerData.currentHealth}`, 48, 28)
+        c.fillText(`${playerData.currentHealth}`, 48, 30)
 
 
         // updates the player's sprite
